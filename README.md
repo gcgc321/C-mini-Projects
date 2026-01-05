@@ -1,0 +1,4 @@
+# C Mini Projects
+
+## Purpose
+    I am documenting my learning with in C
