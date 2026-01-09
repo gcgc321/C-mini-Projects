@@ -31,9 +31,23 @@ int main (void)
 	}
 	else
 	{
-		printf("The write operation succeeded!");
+		printf("The write operation succeeded!\n");
 	}
 
-	return 0;
+	
+
+    int closertn;
+    closertn = close(filedescriptor);
+
+    if (closertn < 0)
+    {
+        printf("The close operation failed...");
+        return -1;
+    }
+    else
+    {
+        printf("The close operation succeeded!");
+        return 0;
+    }
 
 }
